@@ -1,0 +1,42 @@
+{
+  "technical_status": "TECHNICAL_READY",
+  "learner_status": "LEARNER_WORK_REQUIRED",
+  "data_revision": "fe0c0204e6076a7ac2139b7336485a097343fb8a",
+  "lab_revision": "1e1da4acbee8941bef07245b259fb6c27ced4ad7",
+  "support_sha256": {
+    "scripts/day2_validation.py": "d2fd0353330c3629bdaed6c570528792955fce232540a85d33532a9432522f43",
+    "data/day2_optuna_example.csv": "a59000eee4caced319735d237b8d121b2e0c7384acce93392d214ddbfe2f5b93",
+    "data/day2_optuna_example.json": "a91a4d3a39ecd9cbab9bf902aaf5e2e060d4e21bcc93793057d5250aa002802c"
+  },
+  "data_manifest_sha256": "86d15e813caf833b7d86512808176388d4123dc3c01c6525ee849a76e8322c59",
+  "dirty_data_sha256": "ee0a46ea5a27afa7db6d8fbf86e43c3c02c321bec1edf022c0f11ecd2483322b",
+  "config": {
+    "seed": 211,
+    "n_jobs": 2,
+    "max_trees": 200,
+    "patience": 20,
+    "trials": 8,
+    "timeout_seconds": 120
+  },
+  "mode": "FAST",
+  "python": "3.13.16",
+  "duplicates": {
+    "input_rows": 10000,
+    "retained_rows": 10000,
+    "duplicate_rows_removed": 0
+  },
+  "removed_features": [
+    "days_past_due_60",
+    "collection_calls"
+  ],
+  "oof_rows_per_scheme": {
+    "clean_time_group_fixed": 5039,
+    "clean_time_group_tuned": 5039
+  },
+  "oof_whole_data_coverage": 0.5039,
+  "warmup_rows": 4961,
+  "search_source": "LIVE",
+  "example_used_for_results": false,
+  "challenge_used_for_modeling": false,
+  "grading": "No automatic grade"
+}

@@ -20,16 +20,16 @@
     "optuna": "4.5.0"
   },
   "sources": {
-    "requirements-colab.txt": "downloaded and verified",
-    "constraints.txt": "downloaded and verified",
-    "scripts/data_checks.py": "downloaded and verified",
-    "scripts/readiness_checks.py": "downloaded and verified",
-    "scripts/generate_synthetic_data.py": "downloaded and verified",
-    "data/data_contract.json": "downloaded and verified",
-    "data/feature_dictionary.csv": "downloaded and verified",
-    "data/tamweel_train.csv": "downloaded and verified",
-    "data/tamweel_dirty.csv": "downloaded and verified",
-    "data/tamweel_challenge.csv": "downloaded and verified"
+    "requirements-colab.txt": "verified local copy",
+    "constraints.txt": "verified local copy",
+    "scripts/data_checks.py": "verified local copy",
+    "scripts/readiness_checks.py": "verified local copy",
+    "scripts/generate_synthetic_data.py": "verified local copy",
+    "data/data_contract.json": "verified local copy",
+    "data/feature_dictionary.csv": "verified local copy",
+    "data/tamweel_train.csv": "verified local copy",
+    "data/tamweel_dirty.csv": "verified local copy",
+    "data/tamweel_challenge.csv": "verified local copy"
   },
-  "setup_seconds": 14.56
+  "setup_seconds": 4.54
 }

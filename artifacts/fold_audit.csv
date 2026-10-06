@@ -1,0 +1,4 @@
+fold,validation_start,validation_end_exclusive,train_rows,validation_rows,train_positives,validation_positives,immature_past_rows_removed,customer_overlap_rows_removed,shared_customers,latest_training_label_available,validation_positive_rate
+1,2023-07-01,2024-01-01,3223,1632,274,110,826,912,0,2023-06-30,0.06740196078431372
+2,2024-01-01,2024-07-01,4460,1674,353,135,785,1348,0,2023-12-31,0.08064516129032258
+3,2024-07-01,2025-01-01,5731,1733,465,139,861,1675,0,2024-06-30,0.08020773225620312
