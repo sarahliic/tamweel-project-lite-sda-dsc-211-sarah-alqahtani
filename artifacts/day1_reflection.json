@@ -1,0 +1,18 @@
+{
+  "problem_statement": "I want to predict the positive outcome and compare the three models based on their performance and training time. The model is used for teaching and understanding the difference between Logistic Regression, XGBoost, and LightGBM.",
+  "candidate": "Logistic Regression",
+  "notes": {
+    "evidence": "\nLogistic Regression had the highest ROC-AUC at 0.821 and the lowest training\ntime at 0.120 seconds. XGBoost had a slightly higher Average Precision (0.334)\nthan Logistic Regression (0.326).\n",
+    "limitation": "\nThis experiment uses one random split, so it cannot prove that Logistic\nRegression is always the best model or that the results will be the same on\nother data.\n",
+    "next_test": "\nI would test the three models on different splits or use cross-validation.\nIf another split gives better ROC-AUC or AP to another model, it could change\nmy choice.\n"
+  },
+  "exit_answers": [
+    "\nI inspect AP beside ROC-AUC because the positive class is uncommon. ROC-AUC\nshows how well the model ranks positive cases above negative cases, while AP\nshows the precision-recall performance and is more useful for the rare\npositive class.\n",
+    "\nThe comparison set must remain separate from early stopping because the\ncomparison data should not be used to choose the model or the number of trees.\nOtherwise, the model selection could be influenced by the comparison data and\nthe final results would be less reliable.\n"
+  ],
+  "checkpoint": {
+    "status": "READY_FOR_REVIEW",
+    "missing": [],
+    "automatic_grade": null
+  }
+}
