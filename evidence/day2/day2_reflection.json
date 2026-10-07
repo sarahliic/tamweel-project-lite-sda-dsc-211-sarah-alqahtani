@@ -1,0 +1,20 @@
+{
+  "responses": {
+    "leak_example": "",
+    "split_reason": "",
+    "observed_gap": "",
+    "imputer_reason": "",
+    "limitations": ""
+  },
+  "checkpoint": {
+    "status": "LEARNER_WORK_REQUIRED",
+    "missing": [
+      "leak_example",
+      "split_reason",
+      "observed_gap",
+      "imputer_reason",
+      "limitations"
+    ],
+    "automatic_grade": null
+  }
+}

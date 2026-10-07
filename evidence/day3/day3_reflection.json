@@ -1,0 +1,16 @@
+{
+  "source": "LIVE",
+  "responses": {
+    "threshold_reason": "The selected threshold was chosen because it gives the lowest loss while satisfying the capacity requirement in every validation period.",
+    "cost_capacity_tradeoff": "A lower threshold can identify more defaults but creates more flags. The selected threshold accepts some additional loss to remain within the review capacity.",
+    "regional_gap": "The FPR varies across regions, with a gap of 0.6484 percentage points between the highest and lowest region. This is a descriptive difference that should be reviewed, but it does not prove unfairness.",
+    "limitations": "This is based on synthetic data and OOF development results. It is not a statistical significance test, legal fairness assessment, or causal analysis.",
+    "why_accuracy_misleads": "Accuracy can be high even when the model misses all defaults because defaults are a minority class. Therefore, recall, precision, AP, loss, and capacity should also be considered.",
+    "why_oof": "OOF predictions provide predictions for applications that were not used to train the corresponding model, giving a safer estimate of development performance than training predictions."
+  },
+  "checkpoint": {
+    "status": "READY_FOR_REVIEW",
+    "missing": [],
+    "automatic_grade": null
+  }
+}
