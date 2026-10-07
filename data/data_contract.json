@@ -1,0 +1,424 @@
+{
+  "dataset_version": "tamweel-lite-1.0",
+  "synthetic": true,
+  "metadata": [
+    "application_id",
+    "customer_id",
+    "application_date"
+  ],
+  "features": [
+    {
+      "name": "age",
+      "dtype": "integer",
+      "unit": "years",
+      "range": [
+        21,
+        64
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "العمر عند الطلب",
+      "description_en": "Age at application"
+    },
+    {
+      "name": "income_sar",
+      "dtype": "number",
+      "unit": "SAR/month",
+      "range": [
+        2500,
+        42000
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "الدخل الشهري المصرح به",
+      "description_en": "Declared monthly income"
+    },
+    {
+      "name": "loan_amount_sar",
+      "dtype": "number",
+      "unit": "SAR",
+      "range": [
+        10000,
+        350000
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "مبلغ التمويل المطلوب",
+      "description_en": "Requested principal"
+    },
+    {
+      "name": "tenor_months",
+      "dtype": "integer",
+      "unit": "months",
+      "range": [
+        12,
+        60
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "مدة التمويل المطلوبة",
+      "description_en": "Requested term",
+      "allowed": [
+        12,
+        24,
+        36,
+        48,
+        60
+      ]
+    },
+    {
+      "name": "bureau_score",
+      "dtype": "integer",
+      "unit": "score",
+      "range": [
+        300,
+        850
+      ],
+      "nullable": true,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "درجة ائتمانية اصطناعية عند الطلب",
+      "description_en": "Fictional bureau score at application"
+    },
+    {
+      "name": "dti",
+      "dtype": "number",
+      "unit": "ratio",
+      "range": [
+        0,
+        3
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "نسبة الالتزام مع القسط المقترح إلى الدخل",
+      "description_en": "Obligations plus proposed principal-only instalment divided by income"
+    },
+    {
+      "name": "months_employed",
+      "dtype": "integer",
+      "unit": "months",
+      "range": [
+        0,
+        360
+      ],
+      "nullable": true,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "مدة العمل الحالية",
+      "description_en": "Current employment tenure"
+    },
+    {
+      "name": "recent_inquiries",
+      "dtype": "integer",
+      "unit": "count",
+      "range": [
+        0,
+        10
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "الاستعلامات السابقة خلال ستة أشهر",
+      "description_en": "Prior inquiries in the preceding six months"
+    },
+    {
+      "name": "prior_defaults",
+      "dtype": "integer",
+      "unit": "count",
+      "range": [
+        0,
+        2
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "أحداث التعثر المعروفة قبل الطلب",
+      "description_en": "Defaults known before application"
+    },
+    {
+      "name": "existing_obligations_sar",
+      "dtype": "number",
+      "unit": "SAR/month",
+      "range": [
+        0,
+        20000
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "الالتزامات الشهرية الحالية",
+      "description_en": "Current monthly obligations"
+    },
+    {
+      "name": "savings_balance_sar",
+      "dtype": "number",
+      "unit": "SAR",
+      "range": [
+        0,
+        2000000
+      ],
+      "nullable": true,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "الرصيد الادخاري المصرح به",
+      "description_en": "Declared savings balance"
+    },
+    {
+      "name": "salary_transfer",
+      "dtype": "integer",
+      "unit": "flag",
+      "range": [
+        0,
+        1
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "تحويل راتب قائم عند الطلب",
+      "description_en": "Existing salary transfer indicator",
+      "allowed": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "credit_history_months",
+      "dtype": "integer",
+      "unit": "months",
+      "range": [
+        0,
+        420
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "طول السجل الائتماني",
+      "description_en": "Length of credit history"
+    },
+    {
+      "name": "utilization_ratio",
+      "dtype": "number",
+      "unit": "ratio",
+      "range": [
+        0,
+        1
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "استخدام الحد الائتماني الحالي",
+      "description_en": "Current credit utilisation"
+    },
+    {
+      "name": "num_open_accounts",
+      "dtype": "integer",
+      "unit": "count",
+      "range": [
+        0,
+        12
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "عدد الحسابات الائتمانية المفتوحة",
+      "description_en": "Open credit accounts"
+    },
+    {
+      "name": "residence_years",
+      "dtype": "integer",
+      "unit": "years",
+      "range": [
+        0,
+        35
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "مدة الإقامة الحالية",
+      "description_en": "Years at current residence"
+    },
+    {
+      "name": "region_central",
+      "dtype": "integer",
+      "unit": "flag",
+      "range": [
+        0,
+        1
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "مؤشر المنطقة الوسطى",
+      "description_en": "Central region indicator",
+      "allowed": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "region_western",
+      "dtype": "integer",
+      "unit": "flag",
+      "range": [
+        0,
+        1
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "مؤشر المنطقة الغربية",
+      "description_en": "Western region indicator",
+      "allowed": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "region_eastern",
+      "dtype": "integer",
+      "unit": "flag",
+      "range": [
+        0,
+        1
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "مؤشر المنطقة الشرقية",
+      "description_en": "Eastern region indicator",
+      "allowed": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "employment_government",
+      "dtype": "integer",
+      "unit": "flag",
+      "range": [
+        0,
+        1
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "مؤشر العمل الحكومي",
+      "description_en": "Government employment indicator",
+      "allowed": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "employment_private",
+      "dtype": "integer",
+      "unit": "flag",
+      "range": [
+        0,
+        1
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "مؤشر العمل في القطاع الخاص",
+      "description_en": "Private-sector employment indicator",
+      "allowed": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "employment_self_employed",
+      "dtype": "integer",
+      "unit": "flag",
+      "range": [
+        0,
+        1
+      ],
+      "nullable": false,
+      "role": "predictor",
+      "available_at": "application_date",
+      "description_ar": "مؤشر العمل الحر",
+      "description_en": "Self-employed indicator",
+      "allowed": [
+        0,
+        1
+      ]
+    }
+  ],
+  "target": {
+    "name": "default_within_90d",
+    "dtype": "integer",
+    "allowed": [
+      0,
+      1
+    ],
+    "horizon_days": 90,
+    "meaning_ar": "حدث تعثر اصطناعي خلال 90 يومًا بعد تاريخ الطلب، وليس بلوغ 90 يوم تأخر",
+    "meaning_en": "A fictional default event within 90 days after application; not 90+ days past due.",
+    "label_available_at": "application_date + 90 days; require strict maturity before validation starts"
+  },
+  "leakage_features": [
+    {
+      "name": "days_past_due_60",
+      "dtype": "integer",
+      "unit": "days",
+      "range": [
+        0,
+        200
+      ],
+      "nullable": false,
+      "role": "leak",
+      "available_at": "after_application",
+      "description_ar": "أيام تأخر مرصودة بعد الطلب؛ للتدريب على كشف التسرب فقط",
+      "description_en": "Post-application observed days overdue; leakage exercise only"
+    },
+    {
+      "name": "collection_calls",
+      "dtype": "integer",
+      "unit": "count",
+      "range": [
+        0,
+        200
+      ],
+      "nullable": false,
+      "role": "leak",
+      "available_at": "after_application",
+      "description_ar": "اتصالات تحصيل بعد الطلب؛ للتدريب على كشف التسرب فقط",
+      "description_en": "Post-application collection calls; leakage exercise only"
+    }
+  ],
+  "rows": {
+    "train": 10000,
+    "dirty": 10000,
+    "challenge": 2500
+  },
+  "date_ranges": {
+    "train": [
+      "2022-01-01",
+      "2024-12-31"
+    ],
+    "challenge": [
+      "2025-01-01",
+      "2025-09-30"
+    ]
+  },
+  "snapshot_date": "2026-01-01",
+  "public_training_seed": 211,
+  "missing_value_policy": "Blank cells only in the three nullable predictors; impute inside each training fold.",
+  "decision_policy": {
+    "false_negative_cost": 10,
+    "false_positive_cost": 1,
+    "max_flag_fraction": 0.12
+  },
+  "restrictions": [
+    "Exclude IDs, dates, target and post-outcome columns from predictors.",
+    "Keep repeated customers out of both sides of a validation split.",
+    "This fictional dataset is not evidence about actual borrowers or regions."
+  ]
+}

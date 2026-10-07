@@ -1,0 +1,26 @@
+{
+  "method": "paired customer-cluster percentile bootstrap",
+  "level": 0.95,
+  "requested": 200,
+  "valid": 200,
+  "skipped_one_class": 0,
+  "customers": 1520,
+  "conditional_on": "fixed model, calibrator and observed evaluation period; no refitting",
+  "limitation": "Does not include model fitting, calibration fitting, future drift or arbitrary time dependence.",
+  "raw_ap": {
+    "lower": 0.19744214252180778,
+    "upper": 0.33785440070658884
+  },
+  "calibrated_ap": {
+    "lower": 0.19744214252180778,
+    "upper": 0.33785440070658884
+  },
+  "brier_change": {
+    "lower": -0.054176548618594535,
+    "upper": -0.03740905739030022
+  },
+  "period_ap_sample_sd": {
+    "raw": 0.002882017528437586,
+    "sigmoid": 0.002882017528437586
+  }
+}

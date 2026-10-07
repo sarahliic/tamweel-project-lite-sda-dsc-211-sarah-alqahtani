@@ -1,0 +1,46 @@
+{
+  "dataset_version": "tamweel-lite-1.0",
+  "synthetic": true,
+  "files": {
+    "requirements-colab.txt": {
+      "sha256": "bba1916d8958bb7a20089c54941b4a23f7195feae270f5951e1d8d1921ea9723",
+      "bytes": 221
+    },
+    "constraints.txt": {
+      "sha256": "c8ba46560d5ee64f8c94782734b2b9f496cf115f2d1060165841ce771a1a7873",
+      "bytes": 242
+    },
+    "scripts/data_checks.py": {
+      "sha256": "6fb3b48238e12d6c0e7494f0160bc4aa1190c967b53f5140c112a169529a5673",
+      "bytes": 5174
+    },
+    "scripts/readiness_checks.py": {
+      "sha256": "b4c0ad2559b60b3563ed837a4311969965bec4a13775ec25be689acf53cb59a1",
+      "bytes": 3520
+    },
+    "scripts/generate_synthetic_data.py": {
+      "sha256": "c3bc8ca1b7913cc9a25d87988191105c413c566d09cedd28f7a12f20a3a95304",
+      "bytes": 6446
+    },
+    "data/data_contract.json": {
+      "sha256": "3b2d60c52452cb1cc43ea105992211746e5da44cdb2e5ed73b04bbce52dd5d21",
+      "bytes": 11257
+    },
+    "data/feature_dictionary.csv": {
+      "sha256": "085d1b609f96a286a66dbd3100b5f23d5ca77a8b0dbdd4541b1f55531d5a5194",
+      "bytes": 4551
+    },
+    "data/tamweel_train.csv": {
+      "sha256": "b6173dae392035f9824bd6a55e4c57bbdca9b7085253de5691f17323dea9550d",
+      "bytes": 1196818
+    },
+    "data/tamweel_dirty.csv": {
+      "sha256": "ee0a46ea5a27afa7db6d8fbf86e43c3c02c321bec1edf022c0f11ecd2483322b",
+      "bytes": 1240927
+    },
+    "data/tamweel_challenge.csv": {
+      "sha256": "ea0a8a8c23714b0b4c7ec350b6dbdc142fe939df72ef3c60c2acfc5397b15103",
+      "bytes": 294266
+    }
+  }
+}

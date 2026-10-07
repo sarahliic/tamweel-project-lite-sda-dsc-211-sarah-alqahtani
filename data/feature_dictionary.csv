@@ -1,0 +1,29 @@
+name,role,dtype,unit,allowed_range,nullable,available_at,description_ar,description_en
+application_id,id,string,,,False,application_date,معرف طلب اصطناعي فريد,Synthetic metadata; excluded from model predictors.
+customer_id,id,string,,,False,application_date,معرف عميل اصطناعي قد يتكرر,Synthetic metadata; excluded from model predictors.
+application_date,split,date,,,False,application_date,تاريخ الطلب ولحظة القرار,Synthetic metadata; excluded from model predictors.
+age,predictor,integer,years,"[21, 64]",False,application_date,العمر عند الطلب,Age at application
+income_sar,predictor,number,SAR/month,"[2500, 42000]",False,application_date,الدخل الشهري المصرح به,Declared monthly income
+loan_amount_sar,predictor,number,SAR,"[10000, 350000]",False,application_date,مبلغ التمويل المطلوب,Requested principal
+tenor_months,predictor,integer,months,"[12, 24, 36, 48, 60]",False,application_date,مدة التمويل المطلوبة,Requested term
+bureau_score,predictor,integer,score,"[300, 850]",True,application_date,درجة ائتمانية اصطناعية عند الطلب,Fictional bureau score at application
+dti,predictor,number,ratio,"[0, 3]",False,application_date,نسبة الالتزام مع القسط المقترح إلى الدخل,Obligations plus proposed principal-only instalment divided by income
+months_employed,predictor,integer,months,"[0, 360]",True,application_date,مدة العمل الحالية,Current employment tenure
+recent_inquiries,predictor,integer,count,"[0, 10]",False,application_date,الاستعلامات السابقة خلال ستة أشهر,Prior inquiries in the preceding six months
+prior_defaults,predictor,integer,count,"[0, 2]",False,application_date,أحداث التعثر المعروفة قبل الطلب,Defaults known before application
+existing_obligations_sar,predictor,number,SAR/month,"[0, 20000]",False,application_date,الالتزامات الشهرية الحالية,Current monthly obligations
+savings_balance_sar,predictor,number,SAR,"[0, 2000000]",True,application_date,الرصيد الادخاري المصرح به,Declared savings balance
+salary_transfer,predictor,integer,flag,"[0, 1]",False,application_date,تحويل راتب قائم عند الطلب,Existing salary transfer indicator
+credit_history_months,predictor,integer,months,"[0, 420]",False,application_date,طول السجل الائتماني,Length of credit history
+utilization_ratio,predictor,number,ratio,"[0, 1]",False,application_date,استخدام الحد الائتماني الحالي,Current credit utilisation
+num_open_accounts,predictor,integer,count,"[0, 12]",False,application_date,عدد الحسابات الائتمانية المفتوحة,Open credit accounts
+residence_years,predictor,integer,years,"[0, 35]",False,application_date,مدة الإقامة الحالية,Years at current residence
+region_central,predictor,integer,flag,"[0, 1]",False,application_date,مؤشر المنطقة الوسطى,Central region indicator
+region_western,predictor,integer,flag,"[0, 1]",False,application_date,مؤشر المنطقة الغربية,Western region indicator
+region_eastern,predictor,integer,flag,"[0, 1]",False,application_date,مؤشر المنطقة الشرقية,Eastern region indicator
+employment_government,predictor,integer,flag,"[0, 1]",False,application_date,مؤشر العمل الحكومي,Government employment indicator
+employment_private,predictor,integer,flag,"[0, 1]",False,application_date,مؤشر العمل في القطاع الخاص,Private-sector employment indicator
+employment_self_employed,predictor,integer,flag,"[0, 1]",False,application_date,مؤشر العمل الحر,Self-employed indicator
+days_past_due_60,leak,integer,days,"[0, 200]",False,after_application,أيام تأخر مرصودة بعد الطلب؛ للتدريب على كشف التسرب فقط,Post-application observed days overdue; leakage exercise only
+collection_calls,leak,integer,count,"[0, 200]",False,after_application,اتصالات تحصيل بعد الطلب؛ للتدريب على كشف التسرب فقط,Post-application collection calls; leakage exercise only
+default_within_90d,target,integer,flag,"[0, 1]",False,application_date + 90 days,حدث تعثر اصطناعي خلال 90 يومًا بعد تاريخ الطلب، وليس بلوغ 90 يوم تأخر,A fictional default event within 90 days after application; not 90+ days past due.

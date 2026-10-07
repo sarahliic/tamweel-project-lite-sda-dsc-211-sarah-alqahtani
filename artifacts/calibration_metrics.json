@@ -1,0 +1,58 @@
+{
+  "source": "LIVE",
+  "evaluation_role": "evaluation",
+  "metrics": {
+    "raw": {
+      "rows": 1733,
+      "positives": 139,
+      "prevalence": 0.08020773225620312,
+      "roc_auc": 0.770804184757589,
+      "average_precision": 0.2586772403693424,
+      "brier": 0.1130274342524045,
+      "log_loss": 0.35799251287267114,
+      "ece": 0.14687061126607498,
+      "bins": 10,
+      "binning": "fixed width, [lower, upper); final bin includes 1"
+    },
+    "sigmoid": {
+      "rows": 1733,
+      "positives": 139,
+      "prevalence": 0.08020773225620312,
+      "roc_auc": 0.770804184757589,
+      "average_precision": 0.2586772403693424,
+      "brier": 0.06711237622701882,
+      "log_loss": 0.24674874436590655,
+      "ece": 0.022485928489339457,
+      "bins": 10,
+      "binning": "fixed width, [lower, upper); final bin includes 1"
+    }
+  },
+  "mapping": {
+    "a": -4.701339445837831,
+    "b": 4.327653045132774,
+    "input": "uncalibrated positive probability",
+    "formula": "expit(-(a * raw_probability + b))",
+    "strictly_increasing": true
+  },
+  "policy_selection": {
+    "threshold": 0.5881953696965011,
+    "flagged": 68,
+    "fn": 34,
+    "fp": 47,
+    "loss_units": 387.0,
+    "capacity": 70,
+    "feasible": true
+  },
+  "calibrated_threshold": 0.17331013263107387,
+  "review_band": {
+    "lower": 0.15331013263107388,
+    "upper": 0.19331013263107386,
+    "half_width": 0.02,
+    "interpretation": "Predeclared diagnostic band, not a confidence interval or approved queue."
+  },
+  "capacity_status": "CAPACITY_REVIEW_REQUIRED",
+  "brier_change": -0.045915058025385674,
+  "ece_change": -0.12438468277673552,
+  "prior_course_exposure": true,
+  "not_a_final_untouched_test": true
+}

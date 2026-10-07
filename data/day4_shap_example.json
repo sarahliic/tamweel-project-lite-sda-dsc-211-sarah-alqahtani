@@ -1,0 +1,20 @@
+{
+  "source": "EDUCATIONAL_EXAMPLE",
+  "model_sha256": "1f54c43b0838cb0fd91e9916155a5bc083da8675e41c19b5698cf36a2ab546b3",
+  "rows": 300,
+  "units": "raw log-odds of uncalibrated weighted model",
+  "background": "tree training path counts",
+  "elapsed_seconds": 3.4844267000007676,
+  "max_additivity_error": 5.6968318951078345e-15,
+  "npz_sha256": "de6eefb4f0b1dfd54d4a71e2b73cf8383cea6386e661f8af8662d478cd957e2b",
+  "config": {
+    "seed": 211,
+    "trees": 80,
+    "shap_rows": 300,
+    "shap_seconds": 60.0,
+    "permutation_repeats": 3,
+    "bootstrap_repeats": 200,
+    "review_half_width": 0.02
+  },
+  "training_data_sha256": "b6173dae392035f9824bd6a55e4c57bbdca9b7085253de5691f17323dea9550d"
+}

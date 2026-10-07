@@ -1,0 +1,42 @@
+{
+  "technical_status": "TECHNICAL_READY",
+  "learner_status": "READY_FOR_REVIEW",
+  "source": "LIVE",
+  "requested_config": {
+    "seed": 211,
+    "n_jobs": 2,
+    "trees": 80,
+    "timeout_seconds": 120.0
+  },
+  "effective_config": {
+    "seed": 211,
+    "n_jobs": 2,
+    "trees": 80,
+    "timeout_seconds": 120.0
+  },
+  "assessment_mode": false,
+  "data_revision": "fe0c0204e6076a7ac2139b7336485a097343fb8a",
+  "lab_revision": "c2dc52e129878d0d487db1874891c658de7c4d0d",
+  "support_sha256": {
+    "scripts/day3_decision.py": "40f176633c91fc530db222978bc44495a401b888b1ce448728948f7ae0ca9e12",
+    "data/day3_oof_example.csv": "659952bef85ac3b7ceb7ab84eb2102de6c9b433a1ba122cd57df96581baf0eb3",
+    "data/day3_oof_example.json": "920cf9830043afcc83f8c276c8945677296eb3c49a6e69326d47f6080a9e7fad"
+  },
+  "day2_revision": "1e1da4acbee8941bef07245b259fb6c27ced4ad7",
+  "day2_sha256": "d2fd0353330c3629bdaed6c570528792955fce232540a85d33532a9432522f43",
+  "manifest_sha256": "86d15e813caf833b7d86512808176388d4123dc3c01c6525ee849a76e8322c59",
+  "training_data_sha256": "b6173dae392035f9824bd6a55e4c57bbdca9b7085253de5691f17323dea9550d",
+  "python": "3.13.16",
+  "elapsed_seconds": 39.2,
+  "coverage": {
+    "eligible_rows": 5039,
+    "all_rows": 10000,
+    "whole_data_coverage": 0.5039,
+    "eligible_coverage": 1.0,
+    "warmup_without_oof": 4961,
+    "source": "LIVE"
+  },
+  "challenge_used_for_modeling": false,
+  "no_automatic_grade": true,
+  "peak_process_memory_mib": 390.3
+}

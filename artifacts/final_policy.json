@@ -1,0 +1,27 @@
+{
+  "raw_oof_threshold": 0.16892161427109176,
+  "calibrated_threshold": 0.12225843144286948,
+  "cost_policy": {
+    "false_negative_cost": 10.0,
+    "false_positive_cost": 1.0,
+    "max_flag_fraction": 0.12
+  },
+  "mapping": {
+    "a": -5.5395828905507045,
+    "b": 2.9069703986829616,
+    "input": "uncalibrated positive probability",
+    "formula": "expit(-(a * raw_probability + b))",
+    "strictly_increasing": true
+  },
+  "batch_audit": {
+    "rows": 2500,
+    "capacity": 300,
+    "threshold_eligible": 330,
+    "flagged": 300,
+    "removed_by_cap": 30,
+    "boundary_score": 0.12990841067105013,
+    "within_capacity": true,
+    "tie_policy": "retain entire equal-score blocks; drop boundary block if it cannot fit",
+    "batch_policy": "threshold first, then probability-descending full-batch cap; no labels or ID tie-breaking"
+  }
+}

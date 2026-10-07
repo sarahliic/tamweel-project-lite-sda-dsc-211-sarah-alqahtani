@@ -1,0 +1,4 @@
+perturbation,bureau_score_used,raw_probability,calibrated_probability,top_positive_features,shared_top_reasons,reference_reasons,source
+bureau_score +0,497.0,0.9030786389041834,0.4795180137876583,bureau_score|dti|loan_amount_sar,3,3,LIVE
+bureau_score -1,496.0,0.9030786389041834,0.4795180137876583,bureau_score|dti|loan_amount_sar,3,3,LIVE
+bureau_score +1,498.0,0.9030786389041834,0.4795180137876583,bureau_score|dti|loan_amount_sar,3,3,LIVE

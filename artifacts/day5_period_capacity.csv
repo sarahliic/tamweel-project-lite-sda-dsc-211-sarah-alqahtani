@@ -1,0 +1,4 @@
+fold,rows,capacity,flagged,flag_fraction,within_capacity,source
+1,732,87,86,0.11748633879781421,True,LIVE
+2,734,88,84,0.11444141689373297,True,LIVE
+3,689,82,75,0.10885341074020319,True,LIVE

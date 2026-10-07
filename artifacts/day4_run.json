@@ -1,0 +1,38 @@
+{
+  "technical_status": "TECHNICAL_READY",
+  "learner_status": "READY_FOR_REVIEW",
+  "explanation_source": "LIVE",
+  "model_calibration_source": "LIVE",
+  "config": {
+    "seed": 211,
+    "trees": 80,
+    "shap_rows": 300,
+    "shap_seconds": 60.0,
+    "permutation_repeats": 3,
+    "bootstrap_repeats": 200,
+    "review_half_width": 0.02
+  },
+  "assessment_mode": false,
+  "lab_revision": "4f6892d5c02923b5f8e3c78f4fcead73b043570f",
+  "support_sha256": {
+    "scripts/day4_trust.py": "7e0f54bdbed94b28d09cddd02ce0ba0471d5046f05c7b70589e3e4be9902f20c",
+    "data/day4_shap_example.npz": "de6eefb4f0b1dfd54d4a71e2b73cf8383cea6386e661f8af8662d478cd957e2b",
+    "data/day4_shap_example.json": "8169c70dc327a7ffdff748c365d71544fe951f3b196974e33f09dccb580a8122"
+  },
+  "previous_support": {
+    "scripts/day2_validation.py": [
+      "1e1da4acbee8941bef07245b259fb6c27ced4ad7",
+      "d2fd0353330c3629bdaed6c570528792955fce232540a85d33532a9432522f43"
+    ],
+    "scripts/day3_decision.py": [
+      "c2dc52e129878d0d487db1874891c658de7c4d0d",
+      "40f176633c91fc530db222978bc44495a401b888b1ce448728948f7ae0ca9e12"
+    ]
+  },
+  "data_revision": "fe0c0204e6076a7ac2139b7336485a097343fb8a",
+  "python": "3.13.16",
+  "elapsed_seconds": 58.8,
+  "capacity_status": "CAPACITY_REVIEW_REQUIRED",
+  "challenge_used_for_modeling": false,
+  "no_automatic_grade": true
+}

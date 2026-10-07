@@ -1,0 +1,35 @@
+{
+  "python": "3.13.16",
+  "platform": "Linux",
+  "course_revision": "fe0c0204e6076a7ac2139b7336485a097343fb8a",
+  "dataset_version": "tamweel-lite-1.0",
+  "seed": 211,
+  "n_jobs": 2,
+  "fast_mode": true,
+  "full_mode": false,
+  "versions": {
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.6.1",
+    "matplotlib": "3.10.0",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "shap": "0.52.0",
+    "numba": "0.61.2",
+    "optuna": "4.5.0"
+  },
+  "sources": {
+    "requirements-colab.txt": "verified local copy",
+    "constraints.txt": "verified local copy",
+    "scripts/data_checks.py": "verified local copy",
+    "scripts/readiness_checks.py": "verified local copy",
+    "scripts/generate_synthetic_data.py": "verified local copy",
+    "data/data_contract.json": "verified local copy",
+    "data/feature_dictionary.csv": "verified local copy",
+    "data/tamweel_train.csv": "verified local copy",
+    "data/tamweel_dirty.csv": "verified local copy",
+    "data/tamweel_challenge.csv": "verified local copy"
+  },
+  "setup_seconds": 0.03
+}

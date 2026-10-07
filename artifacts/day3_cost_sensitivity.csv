@@ -1,0 +1,4 @@
+FN_loss_units,FP_loss_units,capacity_fraction,threshold,flagged,recall,loss_units,capacity_feasible,source
+8.0,1,0.12,0.6583471436014694,526,0.4088541666666667,2185.0,True,LIVE
+10.0,1,0.12,0.6583471436014694,526,0.4088541666666667,2639.0,True,LIVE
+12.0,1,0.12,0.6583471436014694,526,0.4088541666666667,3093.0,True,LIVE

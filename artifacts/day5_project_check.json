@@ -1,0 +1,57 @@
+{
+  "status": "PROJECT_WORK_REQUIRED",
+  "items": [
+    {
+      "item": "day1_learner_evidence",
+      "status": "MISSING",
+      "meaning": "presence and self-reported source only; authenticity and reasoning need human review"
+    },
+    {
+      "item": "day2_learner_evidence",
+      "status": "MISSING",
+      "meaning": "presence and self-reported source only; authenticity and reasoning need human review"
+    },
+    {
+      "item": "day3_learner_evidence",
+      "status": "MISSING",
+      "meaning": "presence and self-reported source only; authenticity and reasoning need human review"
+    },
+    {
+      "item": "day4_learner_evidence",
+      "status": "MISSING",
+      "meaning": "presence and self-reported source only; authenticity and reasoning need human review"
+    },
+    {
+      "item": "notebooks/01_baseline_boosting.ipynb",
+      "status": "MISSING",
+      "meaning": "file presence does not verify execution, content, grade or submission receipt"
+    },
+    {
+      "item": "notebooks/02_validation_tuning.ipynb",
+      "status": "MISSING",
+      "meaning": "file presence does not verify execution, content, grade or submission receipt"
+    },
+    {
+      "item": "notebooks/03_cost_sensitive_decision.ipynb",
+      "status": "MISSING",
+      "meaning": "file presence does not verify execution, content, grade or submission receipt"
+    },
+    {
+      "item": "notebooks/04_explain_calibrate.ipynb",
+      "status": "MISSING",
+      "meaning": "file presence does not verify execution, content, grade or submission receipt"
+    },
+    {
+      "item": "notebooks/05_final_model.ipynb",
+      "status": "MISSING",
+      "meaning": "file presence does not verify execution, content, grade or submission receipt"
+    },
+    {
+      "item": "presentation/final_presentation.pdf",
+      "status": "MISSING",
+      "meaning": "file presence does not verify execution, content, grade or submission receipt"
+    }
+  ],
+  "automatic_grade": null,
+  "receipt": false
+}

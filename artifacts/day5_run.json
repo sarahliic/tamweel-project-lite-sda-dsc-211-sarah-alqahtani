@@ -1,0 +1,45 @@
+{
+  "technical_status": "TECHNICAL_READY",
+  "source": "LIVE",
+  "chosen": "Logistic",
+  "decision": "KEEP SINGLE",
+  "config": {
+    "seed": 211,
+    "trees": 80,
+    "seconds": 120.0,
+    "max_brier_increase": 0.005,
+    "max_ece_increase": 0.01
+  },
+  "learner_status": "READY_FOR_REVIEW",
+  "lab_revision": "f486fc50dd9ac8403016facc58cf6a62beb4abf4",
+  "support_hashes": {
+    "scripts/day5_final.py": "71553cffc66f972e77d470a347cae40e4ca2802026535b48cb40168a59362b10",
+    "scripts/day5_delivery.py": "eba5b5820550b44ccca2cf7f5d56a826c015de552e5db8d7e4c27a6e956ecd21",
+    "scripts/inference.py": "abf1af0bca47bcd08e66f8218276773d39083e6f42f42caeea5d8b2db70c0a6a",
+    "scripts/replay_final.py": "adcb2e40aff819439068cd7a2aca9fcb6f8632b0c551a9d04f7bd63efc8506fb",
+    "scripts/rebuild_final.py": "ac18b78160dbc33b720f3e1038667110760832c095e23c1ea7f909d4c5760dfd",
+    "data/tamweel_oof_matrix.csv": "f8c9429c7eed015d53978fba93b4b32ed3266fa15b63471b03881ab5c09804b5",
+    "data/day5_oof_example.json": "9edcb173ab5aa504af3ef79c4f3371cd285fa4b171be1bcc6dd9da1d7fb0394d",
+    "presentation/FINAL_PRESENTATION_TEMPLATE.md": "8d3df570727b18db097c9c78ed518ac09bd8766dbdba2817ae8883e43ed5de39",
+    "presentation/FINAL_PRESENTATION_GUIDE.md": "1d24149ef2e56df0a6c44e000157135904b8ba3d252445e4367a6de547c87b19"
+  },
+  "previous_support": {
+    "scripts/day2_validation.py": [
+      "1e1da4acbee8941bef07245b259fb6c27ced4ad7",
+      "d2fd0353330c3629bdaed6c570528792955fce232540a85d33532a9432522f43"
+    ],
+    "scripts/day3_decision.py": [
+      "c2dc52e129878d0d487db1874891c658de7c4d0d",
+      "40f176633c91fc530db222978bc44495a401b888b1ce448728948f7ae0ca9e12"
+    ],
+    "scripts/day4_trust.py": [
+      "4f6892d5c02923b5f8e3c78f4fcead73b043570f",
+      "7e0f54bdbed94b28d09cddd02ce0ba0471d5046f05c7b70589e3e4be9902f20c"
+    ]
+  },
+  "data_revision": "fe0c0204e6076a7ac2139b7336485a097343fb8a",
+  "python": "3.13.16",
+  "elapsed_seconds": 43.65,
+  "challenge_labels_used": false,
+  "automatic_grade": null
+}

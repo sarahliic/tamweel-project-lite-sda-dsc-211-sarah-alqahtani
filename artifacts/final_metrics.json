@@ -1,0 +1,76 @@
+{
+  "gate": {
+    "decision": "KEEP SINGLE",
+    "chosen": "Logistic",
+    "best_single": "Logistic",
+    "fold_sd_reference": 0.029808482193007513,
+    "selection_rule": "simplest passing ensemble: Equal, Weighted, Stack; otherwise best single",
+    "gate": "AP lift > single fold SD; Brier increase <=0.005; ECE increase <=0.01",
+    "brier_tolerance": 0.005,
+    "ece_tolerance": 0.01,
+    "scope": "selection evidence; three dependent forward folds, descriptive SD, not a significance test or untouched holdout"
+  },
+  "oof_threshold_selection": {
+    "threshold": 0.16892161427109176,
+    "tp": 84,
+    "fp": 161,
+    "fn": 95,
+    "tn": 1815,
+    "flagged": 245,
+    "flag_fraction": 0.1136890951276102,
+    "recall": 0.4692737430167598,
+    "precision": 0.34285714285714286,
+    "false_positive_rate": 0.08147773279352227,
+    "accuracy": 0.8812064965197216,
+    "loss_units": 1111.0,
+    "loss_units_per_10000": 5155.452436194896,
+    "capacity_feasible": true,
+    "max_period_flag_fraction": 0.11748633879781421,
+    "rows": 2155,
+    "source": "LIVE"
+  },
+  "regional_oof": {
+    "fpr_gap_percentage_points": 3.976428762753549,
+    "groups_with_negative_support": 4,
+    "interpretation": "Descriptive; no confidence interval or fairness certification."
+  },
+  "calibration_fit_diagnostics": {
+    "raw_fit_diagnostic": {
+      "rows": 836,
+      "positives": 78,
+      "prevalence": 0.09330143540669857,
+      "roc_auc": 0.7890366010418781,
+      "average_precision": 0.28780293336750934,
+      "brier": 0.07647299647134462,
+      "log_loss": 0.2664891749767501,
+      "ece": 0.021120676363707083,
+      "bins": 10,
+      "binning": "fixed width, [lower, upper); final bin includes 1"
+    },
+    "sigmoid_fit_diagnostic": {
+      "rows": 836,
+      "positives": 78,
+      "prevalence": 0.09330143540669857,
+      "roc_auc": 0.7890366010418781,
+      "average_precision": 0.28780293336750934,
+      "brier": 0.07805768986753903,
+      "log_loss": 0.27729635115118345,
+      "ece": 0.03487114608608374,
+      "bins": 10,
+      "binning": "fixed width, [lower, upper); final bin includes 1"
+    }
+  },
+  "challenge_metrics": null,
+  "challenge_metrics_reason": "Labels unavailable; no AP/loss/FPR claimed.",
+  "challenge_batch": {
+    "rows": 2500,
+    "capacity": 300,
+    "threshold_eligible": 330,
+    "flagged": 300,
+    "removed_by_cap": 30,
+    "boundary_score": 0.12990841067105013,
+    "within_capacity": true,
+    "tie_policy": "retain entire equal-score blocks; drop boundary block if it cannot fit",
+    "batch_policy": "threshold first, then probability-descending full-batch cap; no labels or ID tie-breaking"
+  }
+}

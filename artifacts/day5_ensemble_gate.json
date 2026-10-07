@@ -1,0 +1,11 @@
+{
+  "decision": "KEEP SINGLE",
+  "chosen": "Logistic",
+  "best_single": "Logistic",
+  "fold_sd_reference": 0.029808482193007513,
+  "selection_rule": "simplest passing ensemble: Equal, Weighted, Stack; otherwise best single",
+  "gate": "AP lift > single fold SD; Brier increase <=0.005; ECE increase <=0.01",
+  "brier_tolerance": 0.005,
+  "ece_tolerance": 0.01,
+  "scope": "selection evidence; three dependent forward folds, descriptive SD, not a significance test or untouched holdout"
+}
