@@ -1,6 +1,6 @@
 # Tamweel Lite — Credit Risk Decision Modeling & Pipeline
 
-**Developer:** Sarah Alqahtani **Project Type:** Individual Capstone Project
+**Developer:** Sarah Alqahtani **Project Type:** Individual Capstone Project **Training Programme:** SDA-DSC-211 — Advanced Machine Learning Methods
 
 [![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sarahliic/tamweel-project-lite-sda-dsc-211-sarah-alqahtani/blob/main/notebooks/99_final_submission_check.ipynb)
 
@@ -180,6 +180,6 @@ python scripts/replay_final.py
 
 ## Training-program attribution
 
-This project was completed for the **Tamweel Lite for Developers with ML** capstone, delivered by **SDAIA Academy via Learning Space** as a five-day, on-site, 20-hour program. Session: **October 2026**.
+This project was completed for the **Tamweel Lite for Developers with Advanced Machine Learning Methods** capstone, delivered by **SDAIA Academy 211 via Learning Space** as a five-day, on-site, 20-hour program. Session: **October 2026**.
 
 Training-program reference: [SDAIA Academy on GitHub](https://github.com/SDAIAAcademy).
